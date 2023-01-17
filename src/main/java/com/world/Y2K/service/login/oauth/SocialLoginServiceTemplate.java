@@ -25,8 +25,6 @@ public abstract class SocialLoginServiceTemplate {
 		String accessToken = getAccessToken(code);
 		HashMap<String, String>userInfo = getUserInfoFromKakaoResource(accessToken);
 		
-		
-		
 		return setLogin(userInfo);
 	}
 	
