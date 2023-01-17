@@ -233,7 +233,7 @@ const kakao = () =>{
 }
 
 const google = () =>{
-	window.location.href="https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A//www.googleapis.com/auth/drive.metadata.readonly&access_type=offline&include_granted_scopes=true&response_type=code&state=STATE_STRING&redirect_uri=http://localhost:8080/google.lo&client_id=250224335070-67ol1mh21l40c1cq7pb8p471o7v9sg9s.apps.googleusercontent.com"
+	window.location.href="https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A//www.googleapis.com/auth/drive.metadata.readonly&access_type=offline&include_granted_scopes=true&response_type=code&state=STATE_STRING&redirect_uri=http://localhost:8080/google.lo&client_id=250224335070-67ol1mh21l40c1cq7pb8p471o7v9sg9s.apps.googleusercontent.com";
 }
 
 const naver = () =>{

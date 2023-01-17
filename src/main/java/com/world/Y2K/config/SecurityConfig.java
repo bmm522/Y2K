@@ -58,9 +58,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		.addFilter(new LoginService(authenticationManager()))
 		.addFilter(corsFilter)
 		.formLogin().disable()
-//		.loginPage("/loginpage.lo")
-//		.loginProcessingUrl("/login")
-//		.defaultSuccessUrl("/login-success.lo")
 		.userDetailsService(userDetailsService());
 			
 		
