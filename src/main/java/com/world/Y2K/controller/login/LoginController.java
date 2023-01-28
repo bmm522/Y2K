@@ -32,47 +32,49 @@ import com.world.Y2K.service.login.oauth.KakaoLoginService;
 import com.world.Y2K.service.login.oauth.NaverLoginService;
 import com.world.Y2K.service.mypage.OnloadEntityService;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Controller
 @Slf4j
+@RequiredArgsConstructor
 public class LoginController {
 	
-	@Autowired
-	private RegisterService registerService;
 	
-	@Autowired
-	private KakaoLoginService kakaoLoginService;
+	private final RegisterService registerService;
 	
-	@Autowired
-	private NaverLoginService naverLoginService;
 	
-	@Autowired 
-	private EditNicknameService editNicknameService;
+	private final KakaoLoginService kakaoLoginService;
 	
-	@Autowired
-	private CheckIdService checkIdService;
 
-	@Autowired
-	private CheckNicknameService checkNicknameService;
+	private final NaverLoginService naverLoginService;
 	
-	@Autowired
-	private MailAuthService mailAuthService;
+
+	private final EditNicknameService editNicknameService;
 	
-	@Autowired
-	private CheckEmailService checkEmailService;
 	
-	@Autowired
-	private ChangePasswordService changePasswordService;
+	private final CheckIdService checkIdService;
+
+
+	private final CheckNicknameService checkNicknameService;
 	
-	@Autowired
-	private SearchIdFromEmailService searchIdFromEmailService;
 	
-	@Autowired
-	private DeleteMemberService deleteMemberService;
+	private final MailAuthService mailAuthService;
 	
-	@Autowired
-	private OnloadEntityService onloadEntityService;
+	
+	private final CheckEmailService checkEmailService;
+	
+
+	private final ChangePasswordService changePasswordService;
+	
+	
+	private final SearchIdFromEmailService searchIdFromEmailService;
+	
+	
+	private final DeleteMemberService deleteMemberService;
+	
+	
+	private final OnloadEntityService onloadEntityService;
 	
 	
 	@GetMapping("/loginpage.lo")
